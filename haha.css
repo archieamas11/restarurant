@@ -1,93 +1,282 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  font-family: 'inter';
   text-decoration: none;
   scroll-behavior: smooth;
 }
 
+
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 180px;
   z-index: 999;
-  background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  background-color: rgba(255, 255, 255, 0.89);
 }
 
 .navdiv {
-  margin: 1.5rem auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1600px;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 1rem;
 }
 
 .navbar ul li {
+  display: inline-block;
   list-style: none;
+  margin: 0px 20px;
 }
 
 .navbar ul li a {
   color: #272727;
-  margin: 0px 20px;
+  font-family: 'poppins';
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.navbar .right {
+  padding-right: 50px;
 }
 
-.logo1 {
+.logo .logo1 {
   background-color: #39db4a;
   border-radius: 5px;
   padding: 4px;
-  margin-right: 0.5rem;
+  margin: auto 5px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.right .search {
+  padding-right: 30px;
 }
 
 .right {
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+.right .call {
+  background-color: #39db4a;
+  border-radius: 50px;
+  padding: 12px 25px;
+  margin: auto 20px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.right .call-icon {
+  margin-right: 15px;
+}
+
+.right a {
+  padding-right: 20px;
+}
+
+.home {
+  height: 100vh;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.home .home-content {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.0rem;
+  font-size: 40px;
+}
+
+.home h1 {
+  max-width: 550px;
+  font-weight: 800;
+}
+
+.home p,
+.watch p,
+.text {
+  color: #525252;
+  padding-bottom: 10px;
+}
+
+.home span {
+  color: #39db4a;
+}
+
+.text,
+.watch,
+button {
+  font-size: 26px;
+}
+
+.text {
+  max-width: 550px;
+  font-weight: 500;
+}
+
+.order button {
+  background-color: #39db4a;
+  border: transparent;
+  color: white;
+  padding: 20px 38px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(77, 233, 103, 0.527);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order,
+.watch {
+  font-weight: 600;
+}
+
+.order {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.watch {
+  align-items: center;
+  display: inline-flex;
   gap: 1.5rem;
 }
 
-.call {
-  background-color: #39db4a;
-  border-radius: 50px;
-  padding: 0.75rem 1.5rem;
-  color: white;
+
+.circle a {
+  background: white;
+  box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+  width: 70px;
+  height: 70px;
+  color: #272727;
+  border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.call-icon {
-  margin-right: 0.5rem;
+
+.images {
+  position: absolute;
+  margin: 200px;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 1rem;
-  }
 
-  .navdiv {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.images .model {
+  max-width: 50%;
+  float: right;
+}
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
+.messages {
+  position: absolute;
+  z-index: 999;
+  top: 20%;
+  left: 48%;
+}
 
-  .right {
-    margin-top: 1rem;
-  }
+.spicy img {
+  display: block;
+}
+
+.spicy h6 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #FF6868;
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.spicy_noddles,
+.vegetarian_salad {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+  align-items: center;
+  border-radius: 20px;
+  z-index: 999;
+  grid-gap: 1.0rem;
+  width: 300px;
+}
+
+.spicy_noddles {
+  top: 90%;
+  left: 48%;
+}
+
+.vegetarian_salad {
+  top: 90%;
+  left: 75%;
+}
+
+.spicy_noddles img,
+.vegetarian_salad img {
+  box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+  margin: 1rem;
+  max-width: 80px;
+}
+
+.text_content {
+  line-height: 0.6;
+}
+
+
+.text_content h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.text_content h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text_content span {
+  color: #FF6868;
+}
+
+.text_content h5,
+h6 {
+  color: #272727;
+}
+
+
+.text_content .checked {
+  color: #FFE605;
+}
+
+.text_content i {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+  height: 100vh;
 }
