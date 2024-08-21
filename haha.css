@@ -20,7 +20,7 @@
 }
 
 .navdiv {
-  margin: 30px auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@
 .right .call {
   background-color: #39db4a;
   border-radius: 50px;
-  padding: 12px 25px;
+  padding: 13px 28px;
   margin: auto 20px;
   color: white;
   display: inline-flex;
@@ -85,10 +85,6 @@
   height: 100vh;
 }
 
-.title {
-  padding-bottom: 20px;
-}
-
 .home .home-content {
   width: 80%;
   height: 100%;
@@ -96,57 +92,54 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2.0rem;
-  font-size: 40px;
+  gap: 3.5rem;
 }
 
-.home h1 {
-  max-width: 550px;
-  font-weight: 800;
-}
-
-.home p,
-.watch p,
-.text {
-  color: #525252;
-  padding-bottom: 10px;
+.home_title {
+  max-width: 600px;
 }
 
 .home span {
   color: #39db4a;
 }
 
-.text,
-.watch,
-button {
-  font-size: 26px;
+.home_title h1 {
+  font-weight: 800;
+  font-size: 4.0rem;
 }
 
-.text {
-  max-width: 550px;
+.home .text {
+  max-width: 600px;
+}
+
+.home .text p {
+  color: #4A4A4A;
   font-weight: 500;
-}
-
-.order button {
-  background-color: #39db4a;
-  border: transparent;
-  color: white;
-  padding: 20px 38px;
-  border-radius: 50px;
-  box-shadow: 0 5px 15px rgba(77, 233, 103, 0.527);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.order,
-.watch {
-  font-weight: 600;
+  font-size: 28px;
+  text-align: left;
 }
 
 .order {
   display: inline-flex;
   align-items: center;
   gap: 2rem;
+  max-width: 600px;
+}
+
+.order button,
+.watch p {
+  font-weight: 600;
+}
+
+.order button {
+  background-color: #39db4a;
+  border: transparent;
+  color: white;
+  padding: 20px 45px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(77, 233, 103, 0.637);
+  cursor: pointer;
+  font-size: 28px;
 }
 
 .watch {
@@ -155,40 +148,47 @@ button {
   gap: 1.5rem;
 }
 
+.watch p {
+  font-size: 28px;
+  color: #4D4D4D;
+}
+
+.circle i {
+  color: black;
+}
 
 .circle a {
   background: white;
   box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
   width: 70px;
   height: 70px;
-  color: #272727;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .images {
   position: absolute;
-  margin: 200px;
+  max-width: 1000px;
+  left: 36%;
 }
 
-
 .images .model {
-  max-width: 50%;
+  max-width: 65%;
   float: right;
 }
 
 .messages {
   position: absolute;
   z-index: 999;
-  top: 20%;
-  left: 48%;
+  top: 22%;
+  left: 47%;
 }
 
 .spicy img {
   display: block;
+  max-width: 500px;
 }
 
 .spicy h6 {
@@ -217,13 +217,13 @@ button {
 }
 
 .spicy_noddles {
-  top: 90%;
-  left: 48%;
+  top: 91%;
+  left: 31%;
 }
 
 .vegetarian_salad {
-  top: 90%;
-  left: 75%;
+  top: 91%;
+  left: 66%;
 }
 
 .spicy_noddles img,
@@ -234,7 +234,7 @@ button {
 }
 
 .text_content {
-  line-height: 0.6;
+  line-height: 1.5;
 }
 
 
@@ -246,6 +246,10 @@ button {
 .text_content h6 {
   font-weight: 600;
   font-size: 20px;
+}
+
+.text_content span {
+  font-size: 15px;
 }
 
 .text_content span {
@@ -263,20 +267,12 @@ h6 {
 }
 
 .text_content i {
-  font-size: 12px;
-  padding-bottom: 15px;
+  font-size: 15px;
 }
 
 
 
-
-
-
-
-
-
-
-
+/* PAGE 2 */
 .menu_container {
   padding-top: 150px;
   margin: 0 200px;
@@ -311,6 +307,10 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.dishes p {
+  color: #1E1E1E;
 }
 
 .dish_1,
