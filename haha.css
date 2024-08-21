@@ -276,7 +276,59 @@ h6 {
 
 
 
+.menu_container {
+  padding-top: 180px;
+}
+
+.fav p,
+h1 {
+  font-weight: 700;
+}
+
+.fav p {
+  font-size: 20px;
+  color: #FF6868;
+}
+
+.fav h1 {
+  font-size: 40px;
+}
+
 
 .menu {
   height: 100vh;
+}
+
+.fav,
+.dishes {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.dishes {
+  display: flex;
+  align-items: center;
+  gap: 10.5rem;
+  padding-top: 200px;
+}
+
+.dishes img {
+  background-color: #c0f1c7;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  object-fit: cover;
+}
+
+.dishes p {
+  padding-top: 20px;
+  font-weight: 600;
+
+}
+
+.dishes h6 {
+  font-weight: 500;
 }
