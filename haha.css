@@ -35,6 +35,7 @@
 .navbar ul li a {
   color: #272727;
   font-family: 'poppins';
+  font-weight: 500;
 }
 
 .navbar .right {
@@ -210,7 +211,7 @@ button {
   box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
   align-items: center;
   border-radius: 20px;
-  z-index: 999;
+  z-index: 1;
   grid-gap: 1.0rem;
   width: 300px;
 }
@@ -277,7 +278,9 @@ h6 {
 
 
 .menu_container {
-  padding-top: 180px;
+  padding-top: 150px;
+  margin: 0 200px;
+
 }
 
 .fav p,
@@ -288,10 +291,13 @@ h1 {
 .fav p {
   font-size: 20px;
   color: #FF6868;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+
 }
 
 .fav h1 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 
@@ -307,11 +313,21 @@ h1 {
   text-align: center;
 }
 
+.dish_1,
+.dish_2,
+.dish_3,
+.dish_4 {
+  box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+  padding: 50px 70px;
+  width: 1000px;
+  border-radius: 30px;
+}
+
 .dishes {
   display: flex;
   align-items: center;
-  gap: 10.5rem;
-  padding-top: 200px;
+  gap: 2.5em;
+  padding-top: 180px;
 }
 
 .dishes img {
@@ -323,12 +339,113 @@ h1 {
   object-fit: cover;
 }
 
-.dishes p {
-  padding-top: 20px;
-  font-weight: 600;
+.dishes h6 {
+  color: #555555;
+}
 
+.dishes p {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .dishes h6 {
   font-weight: 500;
+  font-size: 16px;
+  padding-top: 12px;
+
+}
+
+.page_3 {
+  height: 100vh;
+}
+
+.page_3 .container {
+  padding-top: 150px;
+  margin: 0 200px;
+}
+
+.special_dishes {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+
+.special_dishes .rating {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+.page_3 .container .special_title p {
+  color: #FF6868;
+  padding-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.page_3 .container .standout h1,
+.special_title p {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.special_dishes img {
+  max-width: 1000px;
+  padding-bottom: 20px;
+}
+
+.special_dishes span,
+h4,
+p,
+h5,
+i,
+h1 {
+  font-weight: 600;
+}
+
+.special_dishes p {
+  color: #555555;
+  padding-bottom: 10px;
+}
+
+.special_dishes h1 {
+  padding-bottom: 10px;
+}
+
+.special_1,
+.special_2,
+.special_3 {
+  box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+  padding: 50px 70px;
+  border-radius: 30px;
+  align-items: center;
+  height: auto;
+}
+
+.special_dishes .rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating span,
+p {
+  font-size: 15px;
+  color: #FF6868;
+}
+
+.rating h4 {
+  font-size: 20px;
+  padding-right: 120px;
+}
+
+.rating i {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  color: orange;
+}
+
+.special_dishes .wrap {
+  max-width: 1000px;
 }
