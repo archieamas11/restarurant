@@ -10,6 +10,13 @@
   scroll-behavior: smooth;
 }
 
+.menu,
+.home,
+.page_3,
+.offers {
+  height: 100vh;
+}
+
 
 .navbar {
   position: fixed;
@@ -79,10 +86,6 @@
 
 .right a {
   padding-right: 20px;
-}
-
-.home {
-  height: 100vh;
 }
 
 .home .home-content {
@@ -297,10 +300,6 @@ h1 {
 }
 
 
-.menu {
-  height: 100vh;
-}
-
 .fav,
 .dishes {
   max-width: fit-content;
@@ -353,11 +352,6 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   padding-top: 12px;
-
-}
-
-.page_3 {
-  height: 100vh;
 }
 
 .page_3 .container {
@@ -377,22 +371,15 @@ h1 {
   text-align: center;
 }
 
-.page_3 .container .special_title p {
-  color: #FF6868;
-  padding-bottom: 30px;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
 .page_3 .container .standout h1,
 .special_title p {
   font-weight: 700;
-  font-size: 45px;
 }
 
 .special_dishes img {
   max-width: 1000px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
 
 .special_dishes span,
@@ -417,10 +404,9 @@ h1 {
 .special_2,
 .special_3 {
   box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
-  padding: 50px 70px;
+  padding: 20px 60px;
   border-radius: 30px;
   align-items: center;
-  height: auto;
 }
 
 .special_dishes .rating {
@@ -428,8 +414,7 @@ h1 {
   align-items: center;
 }
 
-.rating span,
-p {
+.rating span {
   font-size: 15px;
   color: #FF6868;
 }
@@ -446,6 +431,52 @@ p {
   color: orange;
 }
 
-.special_dishes .wrap {
-  max-width: 1000px;
+/* FONT SIZES & COLORS*/
+
+.page_3 .special_dishes h1,
+.rating h4 {
+  font-size: 28px;
+  padding-bottom: 15px;
 }
+
+.page_3 .special_dishes .rating span,
+.rating h5,
+i {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.page_3 .special_dishes p {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.page_3 .special_title p {
+  font-size: 20px;
+}
+
+.page_3 .standout h1 {
+  font-size: 55px;
+}
+
+.page_3 .container .special_title p,
+.offers_text_contents p {
+  color: #FF6868;
+  padding-bottom: 30px;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+
+/* testimony_model_wrapper position */
+.testimony_model_wrapper {
+  max-width: 600px;
+  position: absolute;
+  left: 250px;
+  padding-top: 100px;
+}
+
+.testimony_model_wrapper img {
+  max-width: 80%;
+}
+/*  */
